@@ -5,4 +5,12 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     public bool hasApple = false;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("¿Tengo manzana?: " + hasApple);
+        }
+    }
 }

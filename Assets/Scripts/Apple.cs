@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class Apple : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Bullet"))
+        if (other.CompareTag("Bullet"))
         {
-            GameObject player = GameObject.FindWithTag("Player");
-            player.GetComponent<PlayerInventory>().hasApple = true;
-
-            Destroy(gameObject);
+            Debug.Log("Algo tocó la manzana: " + other.name);
         }
     }
 }

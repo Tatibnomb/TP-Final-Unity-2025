@@ -13,8 +13,11 @@ public class Shoot : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GameObject b = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
+
+            b.GetComponent<Bullet>().player = GetComponent<PlayerInventory>();
+
             Rigidbody rb = b.GetComponent<Rigidbody>();
-            rb.AddForce(shootPoint.forward * bulletForce);
+            rb.AddForce(shootPoint.forward * bulletForce, ForceMode.Impulse);
         }
     }
 }
