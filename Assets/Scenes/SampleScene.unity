@@ -995,7 +995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6689215188570398095}
   shootPoint: {fileID: 1355374274}
-  bulletForce: 10000
+  bulletForce: 100
 --- !u!1001 &1793639168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1194,17 +1194,17 @@ PrefabInstance:
     - target: {fileID: 3267917579456197975, guid: 87e53f7914c74f3498eba3330ccc0f19,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 356
+      value: 656.54
       objectReference: {fileID: 0}
     - target: {fileID: 3267917579456197975, guid: 87e53f7914c74f3498eba3330ccc0f19,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47
+      value: 65.2
       objectReference: {fileID: 0}
     - target: {fileID: 3267917579456197975, guid: 87e53f7914c74f3498eba3330ccc0f19,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 285
+      value: 430.39
       objectReference: {fileID: 0}
     - target: {fileID: 3267917579456197975, guid: 87e53f7914c74f3498eba3330ccc0f19,
         type: 3}
@@ -1246,6 +1246,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3267917579456197975, guid: 87e53f7914c74f3498eba3330ccc0f19,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267917579456197975, guid: 87e53f7914c74f3498eba3330ccc0f19,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267917579456197975, guid: 87e53f7914c74f3498eba3330ccc0f19,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5585836712386035829, guid: 87e53f7914c74f3498eba3330ccc0f19,
         type: 3}
       propertyPath: m_UseGravity
@@ -1260,6 +1275,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300494961106045964, guid: 87e53f7914c74f3498eba3330ccc0f19,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87e53f7914c74f3498eba3330ccc0f19, type: 3}
