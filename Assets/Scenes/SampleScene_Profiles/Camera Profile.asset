@@ -68,13 +68,13 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 0.7169812, g: 0.18600929, b: 0.6948876, a: 1}
+    value: {r: 0.7918151, g: 0.8207547, b: 0.2748754, a: 1}
   center:
     overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.56
+    value: 0.69
   smoothness:
     overrideState: 1
     value: 0.2
@@ -112,7 +112,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.88
+    value: 4
   color:
     overrideState: 1
     value: {r: 0.95169604, g: 1, b: 0, a: 1}
@@ -158,7 +158,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.43
+    value: 12.68
   threshold:
     overrideState: 1
     value: 1
@@ -205,7 +205,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: -41
+    value: -16
   intensityX:
     overrideState: 1
     value: 1
