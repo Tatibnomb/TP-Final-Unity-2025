@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AnimalDetector : MonoBehaviour
 {
+    public TextMeshProUGUI mensajeUI;
     public Camera cam;
     public float detectDistance = 500f;
 
@@ -47,14 +49,14 @@ public class AnimalDetector : MonoBehaviour
         // 1. ¿Hay vaca en mira?
         if (animalEnMira == null)
         {
-            Debug.Log("No estás mirando a la vaca.");
+            mensajeUI.text = "No estás mirando a la vaca.";
             return;
         }
 
         // 2. ¿Tiene manzana?
         if (!inv.hasApple)
         {
-            Debug.Log("No tenés manzana para alimentar a la vaca.");
+            mensajeUI.text = "No tenés manzana para alimentar a la vaca.";
             return;
         }
 
@@ -62,6 +64,6 @@ public class AnimalDetector : MonoBehaviour
         score++;
         inv.hasApple = false;
 
-        Debug.Log("¡Alimentaste a la vaca! Puntos: " + score);
+        mensajeUI.text = "¡Alimentaste a la vaca! - Puntos: " + score;
     }
 }
